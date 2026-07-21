@@ -23,6 +23,10 @@ import time
 from collections import defaultdict, deque
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv()  # picks up a .env file in the working directory, if present
+
 from fastapi import FastAPI, Header, HTTPException, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
