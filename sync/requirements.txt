@@ -1,0 +1,6 @@
+# Dependencies for the EC sync job only (sync/). The query app itself
+# doesn't need `requests` — kept separate so the app's dependency surface
+# doesn't grow for a component it doesn't use.
+#
+# Install with: pip install -r requirements-prod.txt -r sync/requirements.txt --break-system-packages
+requests==2.32.3

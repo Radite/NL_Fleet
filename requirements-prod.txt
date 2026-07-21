@@ -1,0 +1,7 @@
+# Extra dependencies for DB_BACKEND=sqlserver (production).
+# Not merged into requirements.txt on purpose: pyodbc needs the system
+# ODBC Driver for SQL Server installed (see Dockerfile), which the base
+# sqlite/demo/CI path has no reason to require.
+#
+# Install with: pip install -r requirements.txt -r requirements-prod.txt --break-system-packages
+pyodbc==5.1.0
